@@ -57,7 +57,7 @@ int pop_forward(subforwardlist **sfl) {
 
 bool push_where(subforwardlist **sfl, unsigned int where, int d) {
     if (where == 0) {
-        bool push_forward(sfl);
+        push_forward(sfl, d);
         return 1;
     }
     for (unsigned int i = 0; i < where - 1; i++) {
