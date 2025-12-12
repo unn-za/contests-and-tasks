@@ -1,0 +1,3 @@
+C:/Users/amzor/CLionProjects/intensiv_nov/cmake-build-debug/CMakeFiles/intensiv_nov.dir
+C:/Users/amzor/CLionProjects/intensiv_nov/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/amzor/CLionProjects/intensiv_nov/cmake-build-debug/CMakeFiles/rebuild_cache.dir

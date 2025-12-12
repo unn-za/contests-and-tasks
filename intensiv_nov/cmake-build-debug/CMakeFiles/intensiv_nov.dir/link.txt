@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\intensiv_nov.dir/objects.a
+C:\Users\amzor\Desktop\docs\i686-14.2.0-release-mcf-dwarf-ucrt-rt_v12-rev0\mingw32\bin\ar.exe cr CMakeFiles\intensiv_nov.dir/objects.a @CMakeFiles\intensiv_nov.dir\objects1.rsp
+C:\Users\amzor\Desktop\docs\i686-14.2.0-release-mcf-dwarf-ucrt-rt_v12-rev0\mingw32\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\intensiv_nov.dir/objects.a -Wl,--no-whole-archive  -o intensiv_nov.exe -Wl,--out-implib,libintensiv_nov.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\intensiv_nov.dir\linklibs.rsp

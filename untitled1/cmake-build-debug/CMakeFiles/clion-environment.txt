@@ -1,0 +1,4 @@
+ToolSet: w64 12.0 (local)@C:\Users\amzor\Desktop\docs\i686-14.2.0-release-mcf-dwarf-ucrt-rt_v12-rev0\mingw32
+Options: 
+
+Options:
