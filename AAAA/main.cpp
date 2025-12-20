@@ -77,7 +77,7 @@ public:
 int main() {
     const unsigned int WINDOW_WIDTH = 800;
     const unsigned int WINDOW_HEIGHT = 600;
-    sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SFML Убегающая кнопка");
+    sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Unzaz puz");
     window.setFramerateLimit(60);
 
     sf::Font font;
@@ -88,8 +88,23 @@ int main() {
         }
     }
 
+    // Загрузка изображения для отображения после нажатия кнопки
+    sf::Texture winTexture;
+    winTexture.loadFromFile("../squid.png");
+
+    sf::Sprite winSprite;
+    winSprite.setTexture(winTexture);
+
+    sf::Vector2u textureSize = winTexture.getSize();
+    float scale = std::min(800.0f / textureSize.x, 600.0f / textureSize.y) * 0.8f;
+    winSprite.setScale(scale, scale);
+
+    sf::FloatRect spriteBounds = winSprite.getLocalBounds();
+    winSprite.setOrigin(spriteBounds.width / 2, spriteBounds.height / 2);
+    winSprite.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
+
     sf::Vector2f buttonSize(120, 60);
-    Button button(font, "START",
+        Button button(font, "START",
                   sf::Vector2f(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2),
                   buttonSize,
                   sf::Vector2f(WINDOW_WIDTH, WINDOW_HEIGHT));
@@ -154,7 +169,8 @@ int main() {
         button.draw(window);
 
         if (!button.isVisible) {
-            window.draw(winText);
+            //window.draw(winText);
+            window.draw(winSprite);
         }
 
         window.display();
